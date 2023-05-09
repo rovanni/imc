@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Calcular o IMC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <script src="js/calcular_imc.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="css/calcular_imc.css">
+ </head>
+<body>
+	<header>
+        <a class="botao" href="index.html">Página Inicial</a>
+        <a class="botao" href="como_calcula_imc.html">Como é calculado o IMC</a>        
+        <a class="botao" href="sobre.html">Sobre</a>   
+	</header>	 
+	<div>
+        <h1 class="titulo">Calcular o IMC</h1>
+        <p>Página desenvolvida para calcular o Índice de Massa Corporativa (IMC)</p>        
+	<div class="formulario_css">
+        <form id="formulario">
+            <label>Peso (ex.: 58.6):</label>
+            <input id="peso" type="text">
+            <label>Altura (ex.: 1.85):</label>
+            <input id="altura" type="text">
+            <label>Sexo:</label>
+            <select id="sexo">
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+            </select>
+            <label>IMC:</label>
+            <input id="imc" type="text" disabled="disabled">
+            <input id="calcularbotao" class="botao4" onclick="calcular();" value="Calcular">
+        </form>
+	</div>
+		<p>Seu IMC é: </p> 
+		<h4 id="resultado">Valor com resultado do IMC aparecera aqui!</h4>
+		<p>Resultado: </p> 
+		<h4 class="resultado_texto_css" id="resultado_texto">A Situação aparecera aqui!</h4>
+	</div>
+    <footer class="main_footer container">
+   
+        <div class="main_footer_copy">
+            
+            <p class="m-b-footer">Calculo do IMC - 2023, todos os direitos reservados.</p> 
+            <p class="by"><i class="icon icon-heart-3"></i>Desenvolvido por: <a href="#" title="Seu nome">Luciano Rovanni do Nascimento.</a></p>
+        
+        </div>
+    
+    </footer>
+</body>
+</html>
