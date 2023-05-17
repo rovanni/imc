@@ -1,5 +1,3 @@
-# Projeto Integrador
-
 # Sobre
 
 Olá, meu nome é Luciano Rovanni do Nascimento e sou professor de programação web. Acredito que a tecnologia tem o poder de transformar a vida das pessoas e é por isso que me dedico a ensinar tecnologia para todos aqueles que desejam aprender.
