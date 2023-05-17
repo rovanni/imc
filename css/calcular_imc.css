@@ -132,8 +132,15 @@ select{
 }
 
 @media only screen and (max-width: 768px) {
-    body {
+    body, footer {
         font-size: 14px;
         line-height: 1.3;
     }
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+        /* line-height: 2.5; */
+    }
+   
 }
