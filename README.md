@@ -8,3 +8,8 @@ Sites responsivos são aqueles que adaptam o tamanho das suas páginas (alteraç
 
 O Índice de Massa Corpórea (IMC) é uma medida utilizada para avaliar o peso corporal de uma pessoa em relação à sua altura.
 Com a ajuda desta página, meus alunos poderão aprender a criar uma página web responsiva e acessível que permite calcular o IMC de forma rápida e fácil.
+## Demonstração
+
+Demonstração do site:
+
+ - [Site que calcula Índice de Massa Corpórea (IMC)](https://rovanni.github.io/imc/)
