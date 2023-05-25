@@ -8,13 +8,13 @@ function calcular() {
     var altura = +formulario.altura.value;
     // Obtendo o valor do sexo
     var sexo = formulario.sexo.value;
+
     // if para validar se o formulário foi preenchido
     if (peso == "" || altura == "") {
       alert("Por favor informe o valor do peso e da altura!")      
-      
     } else {
-  
-    // Calculando o IMC com base no sexo
+
+      // Calculando o IMC com base no sexo
     var imc;
     if (sexo === "masculino") {
       imc = peso / (altura * altura);
@@ -40,15 +40,19 @@ function calcular() {
           resultado_texto.innerHTML = 'Muito abaixo do peso';
           resultado_texto.style.color = "#FFFFFF"; // branco
           resultado_texto.style.backgroundColor = "#8B0000"; // vermelho escuro
-        } else if (imc >= 20 && imc <= 24.9) {
+        } else if (imc >= 20.7 && imc <= 26.4) {
           resultado_texto.innerHTML = "Peso normal - SAUDÁVEL";
           resultado_texto.style.color = "#FFFFFF"; // branco
           resultado_texto.style.backgroundColor = "#006400"; // verde escuro
-        } else if (imc >= 25 && imc <= 29.9) {
+        } else if (imc >= 26.5 && imc <= 27.8) {
+          resultado_texto.innerHTML = "Acima do peso - Pouco acima do peso";
+          resultado_texto.style.color = "#FFFFFF"; // branco
+          resultado_texto.style.backgroundColor = "#FFA500"; // laranja
+        } else if (imc >= 27.9 && imc <= 31.1) {
           resultado_texto.innerHTML = "Acima do peso - SOBREPESO";
           resultado_texto.style.color = "#FFFFFF"; // branco
           resultado_texto.style.backgroundColor = "#FFA500"; // laranja
-        } else if (imc >= 30 && imc <= 34.9) {
+        } else if (imc >= 31.2 && imc <= 34.9) {
           resultado_texto.innerHTML = "Obesidade grau I";
           resultado_texto.style.color = "#FFFFFF"; // branco
           resultado_texto.style.backgroundColor = "#FF4500"; // laranja escuro
@@ -62,26 +66,30 @@ function calcular() {
           resultado_texto.style.backgroundColor = "#8B0000"; // vermelho escuro
         }
       } else if (sexo === "feminino") {
-        if (imc < 19) {
+        if (imc < 18.5) {
             resultado_texto.innerHTML = 'Muito abaixo do peso';
             resultado_texto.style.color = "#FFFFFF"; // branco
             resultado_texto.style.backgroundColor = "#8B0000"; // vermelho escuro
-          } else if (imc >= 19 && imc < 25) {
+          } else if (imc >= 18.6 && imc <= 24.9) {
             resultado_texto.innerHTML = 'Peso normal - SAUDÁVEL';
             resultado_texto.style.color = "#FFFFFF"; // branco
             resultado_texto.style.backgroundColor = "#006400"; // verde escuro
-          } else if (imc >= 25 && imc < 30) {
-            resultado_texto.innerHTML = 'Acima do peso - SOBREPESO';
+          } else if (imc >= 25 && imc <= 29.9) {
+            resultado_texto.innerHTML = 'Pouco acima do peso - Sobrepeso';
             resultado_texto.style.color = "#FFFFFF"; // branco
             resultado_texto.style.backgroundColor = "#FFA500"; // laranja
-          } else if (imc >= 30 && imc < 40) {
-            resultado_texto.innerHTML = 'Obeso - OBESIDADE';
+          } else if (imc >= 30 && imc <= 34.9) {
+            resultado_texto.innerHTML = "Obesidade grau I";
             resultado_texto.style.color = "#FFFFFF"; // branco
             resultado_texto.style.backgroundColor = "#FF4500"; // laranja escuro
-          } else {
-            resultado_texto.innerHTML = 'Muito obeso - OBESIDADE GRAVE';
+          } else if (imc >= 35 && imc <= 39.9) {
+            resultado_texto.innerHTML = "Obesidade grau II";
             resultado_texto.style.color = "#FFFFFF"; // branco
             resultado_texto.style.backgroundColor = "#FF0000"; // vermelho
+          } else if (imc <= 40){
+            resultado_texto.innerHTML = "Obesidade grau III - MÓRBIDA";
+            resultado_texto.style.color = "#FFFFFF"; // branco
+            resultado_texto.style.backgroundColor = "#8B0000"; // vermelho escuro
           }
         }
     }
