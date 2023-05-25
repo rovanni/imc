@@ -8,6 +8,11 @@ function calcular() {
     var altura = +formulario.altura.value;
     // Obtendo o valor do sexo
     var sexo = formulario.sexo.value;
+    // if para validar se o formulário foi preenchido
+    if (peso == "" || altura == "") {
+      alert("Por favor informe o valor do peso e da altura!")      
+      
+    } else {
   
     // Calculando o IMC com base no sexo
     var imc;
@@ -80,10 +85,10 @@ function calcular() {
           }
         }
     }
-
 // Chamando a função para calcular o IMC
 calcularIMC(imc);
-}
+    }//fim do else
+}//fim da função calcular()
     
 
 // Este código adiciona um event listener para o evento "keypress" no documento.
