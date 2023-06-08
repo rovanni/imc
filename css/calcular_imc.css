@@ -84,7 +84,7 @@ main, .div_resultado{
 div,header,section {
     margin: 0 auto;
     border: 1px solid #E6E6E6;
-    padding: 16px 2px;
+    padding: 16px 20px;
     max-width: 90%;
     height: 100%;
     border-radius: 10px;
@@ -106,7 +106,7 @@ header{
     padding: 0px 0px 5px 0px;
     line-height: 2.5;    
 }
-#resultado_texto {
+#resultado_texto, #resultado {
     font-weight: bold;
 }
 input{
