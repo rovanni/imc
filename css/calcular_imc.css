@@ -15,7 +15,6 @@ main, .div_resultado{
 }
 .botao { 
     font-size: 16px;  
-    padding: 5px 10px;
     border: none; 
     outline: none; 
     color: #fff; 
@@ -91,8 +90,12 @@ div,header,section {
     background-color: #FFFFFF;
     color: #444444;
 }
+section {
+    text-align: justify;
+}
 header{
-    text-align: center;    
+    text-align: center;   
+    padding: 25px 20px;     
 }
 
 .formulario_css {
@@ -129,7 +132,6 @@ select{
 .resultado_texto_css{
     margin: 0 auto;
     padding: 4px 5px;    
-    /* width: auto;     */
     border-radius: 10px;    
     border: 1px solid #E6E6E6; 
 }
@@ -143,7 +145,6 @@ select{
         display: flex;
         flex-direction: column;
         align-items: center;  
-        /* line-height: 2.5; */
     }
    
 }
