@@ -9,10 +9,6 @@ body, footer, header {
 main, .div_resultado{
     text-align: center;
 }
-
-.div_resultado{
-    width: 300px;    
-}
 .botao { 
     font-size: 16px;  
     border: none; 
@@ -80,7 +76,7 @@ main, .div_resultado{
     color: #444444;
 }
 
-div,header,section {
+main, header, section, footer {
     margin: 0 auto;
     border: 1px solid #E6E6E6;
     padding: 16px 20px;
@@ -96,14 +92,6 @@ section {
 header{
     text-align: center;   
     padding: 25px 20px;     
-}
-
-.formulario_css {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 300px;
-    border-radius: 10px;
 }
 #formulario{
     padding: 0px 0px 5px 0px;
@@ -121,7 +109,6 @@ input{
 select{
     border-radius: 10px;
     border: 1px solid black;   
-    /* width: 50px;  */
     font-size: 16px;    
 }
 
@@ -131,6 +118,7 @@ select{
 
 .resultado_texto_css{
     margin: 0 auto;
+    width: 40%;
     padding: 4px 5px;    
     border-radius: 10px;    
     border: 1px solid #E6E6E6; 
@@ -146,5 +134,11 @@ select{
         flex-direction: column;
         align-items: center;  
     }
+
+    @media only screen and (max-width: 400px) {
+        .resultado_texto_css{
+            width: 95%;
+        }        
+    }   
    
 }
